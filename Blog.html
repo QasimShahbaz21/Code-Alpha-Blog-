@@ -12,7 +12,7 @@
         <nav>
             <ul>
                 <li><a href="#">Home</a></li>
-                <li><a href="#">Blog</a></li>
+                <li><a href="/New website codeing/Blog Website/Blog page.html">Blog</a></li>
                 <li><a href="#">About</a></li>
                 <li><a href="#">Contact</a></li>
             </ul>
@@ -22,25 +22,24 @@
     <main>
         <h1 class="blog">Latest Blogs</h1>
         <article>
-            <h2>Zombie Returns</h2>
-            <p>Posted on: <time datetime="2023-09-28">September 28, 2023</time></p>
-            <img src="/New website codeing/pictures/zombies-img.png" alt="Blog Post Image">
-            <p>The Bunker lies in its potential to awaken fear no longer just through soar scares but through mental war. The sanity meter serves as a steady reminder of Henri’s deteriorating intellectual mind, adding a completely unique layer of tension. As the meter depletes, the player’s beliefs skew, leading to unsettling hallucinations and distorted realities. This mechanic brilliantly mirrors the consequences of fear and pressure on the mind, thrusting gamers into the depths of their worst nightmares.</p>
-            <button type="button">Read more</button>
+            <h2><a href="/New website codeing/Blog Website/Zombie.html">My Experience</a></h2>
+            <p>Posted on: <time datetime="2023-09-20">September 20, 2023</time></p>
+            <img src="/New website codeing/pictures/download.png" alt="Blog Post Image" style="width: 400px;height: 200px;">
+            <p>My experience working as an intern at Code Alpha was incredibly positive and enriching. During my time there, I had the opportunity to learn a great deal and grow both personally and professionally. The team at Code Alpha was exceptionally supportive and provided me with valuable guidance throughout my internship. I was exposed to a wide range of projects and tasks that allowed me to apply my skills and knowledge in a real-world context. This experience not only enhanced my technical skills but also taught me the importance of teamwork, communication, and problem-solving in a professional setting. I'm grateful for the opportunity to have been a part of the Code Alpha team, and I believe that this internship has been a significant stepping stone in my career development......</p>
+            <button type="button" id="read-more-button">Read more</button>
         </article>
 
-        <article>
-            <h2>Mortal Kombat 1</h2>
-            <p>Posted on: <time datetime="2023-09-28">September 28, 2023</time></p>
-            <img src="/New website codeing/pictures/Immortals.png" alt="Blog Post Image">
-            <p>The adventure go on with “Mortal Kombat 1”, the most recent portion in the notorious battling game establishment. Get ready to release your inward hero as you take part in bone-pulverizing fights, convey stunning fatalities, and contend with a program of unbelievable warriors. With dazzling visuals and a program of fan-most loved characters, “Mortal Kombat 1” is ready to convey a jolting and instinctive gaming experience.</p>
-            <button type="button">Read more</button>
-        </article>
 
     </main>
 
     <footer>
         <p>&copy; 2023 Gamerss. All rights reserved.</p>
     </footer>
+
+    <script>
+        document.getElementById("read-more-button").addEventListener("click", function() {
+        window.location.href = "Zombie.html";
+    });
+    </script>
 </body>
 </html>

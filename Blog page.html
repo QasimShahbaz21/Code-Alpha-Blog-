@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/New website codeing/Blog.css">
+    <title>Blog</title>
+</head>
+<body>
+    <header>
+        <h1>Gamerss</h1>
+        <nav>
+            <ul>
+                <li><a href="/New website codeing/Blog Website/Blog.html">Home</a></li>
+                <li><a href="#">Blog</a></li>
+                <li><a href="#">About</a></li>
+                <li><a href="#">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <h1 class="blog">All Blog Posts</h1>
+        
+        <!-- This is where we'll dynamically generate the list of blog posts -->
+        <ul id="blog-list">
+            <!-- Blog posts will be added here using JavaScript -->
+        </ul>
+    </main>
+    <footer>
+        <p>&copy; 2023 Gamerss. All rights reserved.</p>
+    </footer>
+
+    <script>
+        // Define an array of blog posts (you can add more)
+const blogPosts = [
+    {
+        title: "My Experience",
+        date: "September 20, 2023",
+        imagePath: "/New website codeing/pictures/download.png",
+        content: "My experience working as an intern at Code Alpha was incredibly positive and enriching. During my time there, I had the opportunity to learn a great deal and grow both personally and professionally. The team at Code Alpha was exceptionally supportive and provided me with valuable guidance throughout my internship. I was exposed to a wide range of projects and tasks that allowed me to apply my skills and knowledge in a real-world context. This experience not only enhanced my technical skills but also taught me the importance of teamwork, communication, and problem-solving in a professional setting. I'm grateful for the opportunity to have been a part of the Code Alpha team, and I believe that this internship has been a significant stepping stone in my career development......",
+        link: "Zombie.html"
+    },
+    // Add more blog posts following the same structure
+];
+
+// Function to dynamically generate and display blog posts
+function displayBlogPosts() {
+    const blogList = document.getElementById("blog-list");
+
+    // Loop through the blogPosts array and create list items for each blog post
+    blogPosts.forEach((post) => {
+        const listItem = document.createElement("li");
+        listItem.innerHTML = `
+            <article>
+                <h2><a href="${post.link}">${post.title}</a></h2>
+                <p>Posted on: <time datetime="${post.date}">${post.date}</time></p>
+                <img src="${post.imagePath}" alt="Blog Post Image">
+                <p>${post.content}</p>
+                <a href="${post.link}">Read more</a>
+            </article>
+        `;
+
+        blogList.appendChild(listItem);
+    });
+}
+
+// Call the function to display the blog posts when the page loads
+window.onload = displayBlogPosts;
+
+    </script>
+</body>
+</html>
